@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>旭野高校卓球部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="旭野高等学校卓球部の非公式ホームページです。意欲をもって練習に取り組み、県大会出場をめざす和気あいあいとしたチームです。男女仲良好。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="home">
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/asahino_logo.png" alt="旭野卓球部"></a></h1>
+	<!--開閉メニュー-->
+	<div id="menubar">
+	<nav>
+	<ul>
+	<li><a href="company.html">部活動詳細</a></li>
+	<li><a href="service.html">活動成績と目標</a></li>
+	<li><a href="staff.html">年間日程</a></li>
+	<li><a href="contact.html">合宿の思い出</a></li>
+	<li class="btn"><a href="recruit.html">部員募集中</a></li>
+	</ul>
+	</nav>
+	</div>
+</header>
+
+<aside class="slide">
+
+<div class="slide img1">
+<img src="images/takkyu_danjo.png" alt="卓球のラケットと台">
+</div>
+
+<div class="slide img2">
+<img src="images/gassyuku.png.jpg" alt="">
+</div>
+
+<div class="slide img3">
+<img src="images/kouryuu.png.jpg" alt="">
+</div>
+
+<div class="slide-indicators"></div>
+
+</aside>
+
+<main>
+
+<div class="bg1">
+
+<section>
+
+<h2 class="c">活動紹介</h2>
+
+<div class="list-grid">
+
+<div class="list up">
+<figure><img src="images/takkyu_danjo.png" alt=""></figure>
+<div class="text">
+<h4>練習メニュー</h4>
+<p>基礎練＆課題練、多球練でフォームの確認。男女で行う練習メニューで男子は台上技術の向上、女子は打ち合いの強さを身に着ける。</p>
+</div>
+</div>
+
+<div class="list up">
+<figure><img src="images/kouryuu.png.jpg" alt=""></figure>
+<div class="text">
+<h4>部員間の交流</h4>
+<p>クリスマス会、混合ダブルス、勉強会、模擬団体戦など楽しいイベントで日々の部活動・勉強の息抜きができる。</p>
+</div>
+</div>
+
+<div class="list up">
+<figure><img src="images/gassyuku.png.jpg" alt=""></figure>
+<div class="text">
+<h4>合宿</h4>
+<p>いつもと異なる環境、対戦相手で集中特訓。一つ屋根の下、チームのメンバーと特別な思い出を作る！</p>
+</div>
+</div>
+
+</div>
+<!--/.list-grid-->
+
+<p class="btn"><a href="service.html">活動成績と目標</a></p>
+
+</section>
+
+</div>
+<!--/.bg1-->
+
+<section>
+
+<h2 class="c">活動日</h2>
+<p class="c"></p>
+
+<table class="week2">
+<tr>
+<th>活動時間</th>
+<th>月</th>
+<th>火</th>
+<th>水</th>
+<th>木</th>
+<th>金</th>
+<th>土or日</th>
+</tr>
+<tr>
+<td>業後</td>
+<td>△</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+</tr>
+</table>
+<p class="c">土or日は9:00-12:00または13:00-16:00。<br>△は自主練です。</p>
+
+</section>
+
+<section>
+
+<h2 class="c">お知らせ</h2>
+<div id="news-area"</div>
+</section>
+</main>
+
+<footer>
+<ul class="icons">
+<li><a href="https://www.instagram.com/ashntabletennis_54"><i class="fab fa-instagram"></i>Instagram</a></li>
+</ul>
+<small>Copyright© 旭野高校卓球部 All Rights Reserved.</small>
+</footer>
+
+<!--以下の行はテンプレートの著作。削除しないで下さい。-->
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+
+</div>
+<!--/#container-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+<script>
+	fetch('news_seiseki/news.html')
+	.then(response => response.text())
+	.then(data => {
+		document.getElementById('news-area').innerHTML = data;})
+</script>
+
+</body>
+</html>

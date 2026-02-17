@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>旭野高校卓球部</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/asahino_logo.png" alt="旭野高校卓球部"></a></h1>
+	<!--開閉メニュー-->
+	<div id="menubar">
+	<nav>
+	<ul>
+	<li><a href="company.html">部活動詳細</a></li>
+	<li><a href="service.html">活動成績と目標</a></li>
+	<li><a href="staff.html">年間日程</a></li>
+	<li><a href="contact.html">合宿の思い出</a></li>
+	<li class="btn"><a href="recruit.html">部員募集中</a></li>
+	</ul>
+	</nav>
+	</div>
+</header>
+
+<main>
+
+<section>
+
+<h2>活動目標</h2>
+<p><img src="images/taiikukan.jpg" alt=""></p>
+<p>旭野高校卓球部は県大会出場を目標に、精力的に公式大会に出場しています。<br>また、部活動だけでなく学業も頑張って取り組んでいます。文武両道。</p>
+
+</section>
+
+<section>
+
+<h2>活動成績</h2>
+<dl class="new">
+<div id="seiseki-area"></div>
+
+
+</main>
+
+<footer>
+<ul class="icons">
+<li><a href="https://www.instagram.com/ashntabletennis_54"><i class="fab fa-instagram"></i>Instagram</a></li>
+</ul>
+<small>Copyright© 旭野高校卓球部 All Rights Reserved.</small>
+</footer>
+
+<!--以下の行はテンプレートの著作。削除しないで下さい。-->
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+
+</div>
+<!--/#container-->
+
+<!--ページの上部へ戻るボタン-->
+<div class="pagetop"><a href="#"><i class="fas fa-angle-double-up"></i></a></div>
+
+<!--開閉ボタン（ハンバーガーアイコン）-->
+<div id="menubar_hdr">
+<span></span><span></span><span></span>
+</div>
+
+<!--jQueryの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--パララックス（inview）-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+<script src="js/jquery.inview_set.js"></script>
+
+<!--このテンプレート専用のスクリプト-->
+<script src="js/main.js"></script>
+
+<script>
+	fetch('news_seiseki/seiseki.html')
+	.then(response => response.text())
+	.then(data => {
+		document.getElementById('seiseki-area').innerHTML = data;})
+</script>
+</section>
+
+</body>
+</html>
